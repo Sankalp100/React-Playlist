@@ -17,8 +17,14 @@
                 name: 'Tony',
                 age: 20
             }
-            handleClick(e){
-                console.log(e.target);
+            handleClick = (e) => {
+                //console.log(e.target);
+                this.setState({
+                    name: "Ajju",
+                    age: 21
+
+                });
+                console.log(this.state);
             }
             handleMouseOver(e){
                 console.log(e.target, e.pageX);
