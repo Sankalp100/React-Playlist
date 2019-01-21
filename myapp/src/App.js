@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-
+import New from './New';
 
 class App extends Component {
   render() {
@@ -8,6 +7,7 @@ class App extends Component {
       <div className="App">
         <h1>My first React app</h1>
         <p>Welcome :)</p>
+        <New/>
       </div>
     );
   }
