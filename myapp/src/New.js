@@ -6,9 +6,9 @@ class New extends Component {
         const  { name, age, job } = this.props;
         return(
             <div className="New">
-                <div>Name: {name}</div>
-                <div>Age: {age}</div>
-                <div>Job: {job}</div>
+                <div>Name: { name } </div>
+                <div>Age: { age } </div>
+                <div>Job: { job } </div>
             </div>
         );
     }
