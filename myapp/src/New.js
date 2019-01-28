@@ -2,13 +2,21 @@ import React, { Component } from 'react';
 
 class New extends Component {
     render () {
-        //console.log(this.props);
-        const  { name, age, job } = this.props;
+        
+        const  { news } = this.props;
+        const newlist = news.map(new => {
+            return(
+                <div className="New" key={new.id}>
+                    <div>Name: { new.name } </div>
+                    <div>Age: { new.age } </div>
+                    <div>Job: { new.job } </div>
+                </div>
+
+            )
+        })
         return(
-            <div className="New">
-                <div>Name: { name } </div>
-                <div>Age: { age } </div>
-                <div>Job: { job } </div>
+            <div className="New-list">
+               { newlist}
             </div>
         );
     }
