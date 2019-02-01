@@ -1,11 +1,13 @@
 import React from 'react'       
 
-const Todos = (todos) => {
+const Todos = ({todos}) => {
 
-  const todolist = todo.length ? (
+  const todoList = todos.length ? (
     todos.map(todo => {
       return(
-              
+        <div className="collection-item" key={todo.id}>
+          <span>{todo.content}</span>      
+        </div>      
       )
     })      
   ) : (
@@ -13,7 +15,9 @@ const Todos = (todos) => {
   )      
   return(
     <div className="Todos Collection">
-
+        {todoList}
     </div>      
   )
 }
+
+export default Todos
