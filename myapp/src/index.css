@@ -12,3 +12,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+form{
+  background:rgb(52, 149, 60);
+  padding: 20px;
+}
