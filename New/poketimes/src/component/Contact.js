@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Contect  = () => {
+const Contect  = (props) => {
+    console.log(props);
     return (
         <div className="comtainer">
             <h4 className="center"> Contect </h4>
