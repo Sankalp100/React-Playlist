@@ -1,4 +1,5 @@
 import React from 'react'
+import Rainbow from '../HOC/Rainbow'
 
 const Contect  = (props) => {
     console.log(props)
@@ -11,4 +12,4 @@ const Contect  = (props) => {
     )
 }
 
-export default Contect 
+export default Rainbow(Contect) 
